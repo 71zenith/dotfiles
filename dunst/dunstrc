@@ -1,0 +1,10 @@
+[global]
+  frame_width = 0
+  font = JetbrainsMono Nerd Font 12
+  show_indicators = no
+  alignment = center
+
+[urgency_normal]
+  background = "#2b2b2b"
+  foreground = "#ffffff"
+  timeout = 3

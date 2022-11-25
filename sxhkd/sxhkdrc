@@ -1,0 +1,56 @@
+alt + Return
+  st
+
+alt + Escape
+  pkill -USR1 -x sxhkd
+
+alt + shift + s
+  bspc node -t {floating,tiled}
+
+alt + shift + r
+  bspc wm -r
+
+alt + x
+  bspc node -c
+
+alt + q
+  bspc node -k
+
+alt + t
+  bspc desktop -l next
+
+alt + {l,h}
+  bspc node -f {next,prev}.local.!hidden.window
+alt + {_,shift} + Tab
+  bspc node -f {next,prev}.local.!hidden.window
+
+alt + shift + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+alt + {_,shift + }{1-6,0}
+  bspc {desktop -f,node -d} '^{1-6,10}'
+
+super + 1
+  volctrl up
+super + 2
+  volctrl down
+super + 3
+  volctrl mute
+
+alt + e
+  st -e lf
+alt + shift + f
+  librewolf
+alt + c
+  rofi -modi "clipboard:greenclip print" -show clipboard
+alt + p
+  rofi -show drun
+
+ctrl + 1
+  playerctl --player=firefox play-pause
+ctrl + 2
+  playerctl --player=firefox next
+ctrl + 3
+  playerctl --player=firefox previous
+ctrl + q
+  playerctl --player=mpv play-pause

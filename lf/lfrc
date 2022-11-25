@@ -1,0 +1,20 @@
+set hidden true
+set scrolloff 999
+set ignorecase true
+
+cmd open ${{
+  case $(file --mime-type "$f" -bL) in
+    text/*) nvim "$f" ;;
+    image/*|video/*) mpv "$f" ;;
+    *) xdg-open "$f" ;;
+  esac
+}}
+
+map d
+map dd delete
+map p paste
+map y copy
+map x cut
+map r rename
+map c clear
+map R reload

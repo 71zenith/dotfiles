@@ -1,0 +1,14 @@
+configuration {
+	modes: "drun";
+	font: "JetbrainsMono Nerd Font 12";
+	fixed-num-lines: false;
+	show-icons: true;
+  scrollbar: false;
+	terminal: "st";
+  kb-accept-entry: "Control+m,Return,KP_Enter";
+  kb-remove-to-eol: "";
+	max-history-size: 100;
+	kb-element-next: "Control+j,Tab";
+	kb-element-prev: "Control+k,ISO_Left_Tab";
+}
+@theme "~/.config/rofi/material.rasi"
